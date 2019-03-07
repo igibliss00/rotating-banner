@@ -1,0 +1,7 @@
+
+@mixin background($arg1, $arg2) {
+    background-image: url($arg1);
+    background-size: $arg2;
+    background-position: center;
+    background-repeat: no-repeat;
+}

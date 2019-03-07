@@ -1,0 +1,76 @@
+@import "variables";
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $lightGrey;
+    color: white;
+}
+
+.main-banner {
+    margin: 0 auto;
+    width: 1200px;
+    height: 400px;
+    background-color: $white;
+    overflow: hidden;
+    position: relative;
+
+    .imgban {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        transition: all ease-in-out 500ms;
+        -webkit-transition: all ease-in-out 500ms;
+        -moz-transition: all ease-in-out 500ms;
+    }
+
+    #imgban3 {
+        @include background(unquote("../img/banner3.jpg"), cover);
+        h2 {
+            margin-top: 300px;
+            margin-left: 50px;
+        }
+    } 
+    #imgban2 {
+        @include background(unquote("../img/banner2.jpg"), cover);
+        h2 {
+            margin-left: 270px;
+        }
+    } 
+    #imgban1 {
+        @include background(unquote("../img/banner1.jpg"), cover);
+        h2 {
+            margin-left: 750px;
+            margin-top: 150px;
+        }
+    } 
+
+    .imgbanbtn {
+        width: 40px;
+        height: 40px;
+        background-color: $black;
+        border-radius: 4px;
+        position: absolute;
+        bottom: 50px;
+        z-index: 2000;
+        opacity: 0.5;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .imgbanbtn-next {
+        right: 50px;
+        @include background(unquote("../img/rightarrow.png"), 60%);
+    }
+    
+    h2 {
+        font-size: 60px;
+    }
+}

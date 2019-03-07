@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f3f3;
+  color: white;
+}
+
+.main-banner {
+  margin: 0 auto;
+  width: 1200px;
+  height: 400px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-banner .imgban {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  -o-transition: all ease-in-out 500ms;
+  transition: all ease-in-out 500ms;
+  -webkit-transition: all ease-in-out 500ms;
+  -moz-transition: all ease-in-out 500ms;
+}
+
+.main-banner #imgban3 {
+  background-image: url(../img/banner3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-banner #imgban3 h2 {
+  margin-top: 300px;
+  margin-left: 50px;
+}
+
+.main-banner #imgban2 {
+  background-image: url(../img/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-banner #imgban2 h2 {
+  margin-left: 270px;
+}
+
+.main-banner #imgban1 {
+  background-image: url(../img/banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-banner #imgban1 h2 {
+  margin-left: 750px;
+  margin-top: 150px;
+}
+
+.main-banner .imgbanbtn {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 50px;
+  z-index: 2000;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.main-banner .imgbanbtn:hover {
+  opacity: 0.9;
+}
+
+.main-banner .imgbanbtn-next {
+  right: 50px;
+  background-image: url(../img/rightarrow.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-banner h2 {
+  font-size: 60px;
+}
